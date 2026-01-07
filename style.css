@@ -1,0 +1,139 @@
+/* 
+   GLOBAL FOUNDATIONS
+*/
+
+:root {
+  --obsidian: #0a0b0e;
+  --white: #f2f2f2;
+  --muted: #9a9a9a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   BODY
+*/
+
+body {
+  background: var(--obsidian);
+  color: var(--white);
+  line-height: 1.8;
+}
+
+/* 
+   CONTAINER
+*/
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 6rem) 1.5rem;
+}
+
+/* 
+   IDENTITY
+*/
+
+.identity {
+  text-align: center;
+}
+
+.identity h1 {
+  font-family: "Century Gothic", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  letter-spacing: 0.18em;
+  font-weight: 400;
+}
+
+.trio {
+  margin-top: 1rem;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: linear-gradient(
+    150deg,
+    #8f7cff,
+    #6fc7e1
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 
+   FULL-BLEED IMAGE
+*/
+
+.image-full {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+
+.image-full img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 
+   ABOUT
+*/
+
+.about {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  max-width: 70ch;
+}
+
+.about h2 {
+  font-family: "Century Gothic", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.08em;
+}
+
+.about p {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  margin-bottom: 1.8rem;
+}
+
+/* 
+   PRESENCE
+*/
+
+.presence {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  display: flex;
+  justify-content: center;
+  gap: clamp(2rem, 5vw, 3.5rem);
+}
+
+.presence img {
+  width: clamp(34px, 4vw, 42px);
+  height: auto;
+  opacity: 0.85;
+}
+
+.presence img:hover {
+  opacity: 1;
+}
+
+/* 
+   FOOTER
+*/
+
+footer {
+  margin-top: clamp(4rem, 8vw, 6rem);
+  text-align: center;
+  font-family: "Century Gothic", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
